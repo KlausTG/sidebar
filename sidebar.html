@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My sidebar</title>
+        <link rel="stylesheet" type="text/css" href="sidebar.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="sidebar">
+            <div class="logo"><img src="Ordrestyring_logo_white_large.png" alt="Ordrestyring logo"></div>            
+            
+            <button class="accordion">overview<i class="material-icons md-18" id="acc">expand_more</i></button>
+            <div class="panel">
+            <ul>
+                <div class="container">
+                    <li class="navItem"><i class="material-icons md-18">dashboard</i><p>Dashboard</p></li>
+                </div>
+                <div class="container">
+                    <li class="navItem"><i class="material-icons md-18">event</i><p>Scheduler</p></li>
+                </div>
+                <div class="container">
+                    <li class="navItem"><i class="material-icons md-18">assignment_ind</i><p>Customers</p></li>
+                </div>
+                <div class="container">
+                    <li class="navItem"><i class="material-icons md-18">local_offer</i><p>Offers</p></li>
+                </div>
+                <div class="container">
+                    <li class="navItem"><i class="material-icons md-18">assignment</i><p>Cases</p></li>
+                </div>
+            </ul>
+            </div>
+
+            <button class="accordion">administration<i class="material-icons md-18" id="acc">expand_more</i></button>
+            <div class="panel">
+            <ul>
+                <div class="container">
+                    <li class="navItem"><i class="material-icons md-18">inbox</i><p>Inbox</p></li>
+                </div>
+                <div class="container">
+                    <li class="navItem"><i class="material-icons md-18">send</i><p>Outbox</p></li>
+                </div>
+                <div class="container">
+                    <li class="navItem"><i class="material-icons md-18">group</i><p>Employees</p></li>
+                </div>
+                <div class="container">
+                    <li class="navItem"><i class="material-icons md-18">local_laundry_service</i><p>Products</p></li>
+                </div>
+                <div class="container">
+                    <li class="navItem"><i class="material-icons md-18">timer</i><p>Hour approval</p></li>
+                </div>
+            </ul>
+            </div>
+
+            <button class="accordion">finance<i class="material-icons md-18" id="acc">expand_more</i></button>
+            <div class="panel">
+            <ul>
+                <div class="container">
+                    <li class="navItem"><i class="material-icons md-18">local_shipping</i><p>Creditors</p></li>
+                </div>
+                <div class="container">
+                    <li class="navItem"><i class="material-icons md-18">receipt</i><p>Creditor invoices</p></li>
+                </div>
+                <div class="container">
+                    <li class="navItem"><i class="material-icons md-18">credit_card</i><p>Sales invoices</p></li>
+                </div>
+                <div class="container">
+                    <li class="navItem"><i class="material-icons md-18">bar_chart</i><p>Reports</p></li>
+                </div>
+            </ul>
+            </div>
+
+            <button class="accordion">add ons<i class="material-icons md-18" id="acc">expand_more</i></button>
+            <div class="panel">
+            <ul>
+                <div class="container">
+                    <li class="navItem"><i class="material-icons md-18">extension</i><p>Marketplace</p></li>
+                </div>
+                <div class="container">
+                    <li class="navItem"i><i class="material-icons md-18">storefront</i><p>Shop</p></li>
+                </div>
+                <div class="container">
+                    <li class="navItem"><i class="material-icons md-18">face</i><p>Jublo</p></li>
+                </div>
+                <div class="container">
+                    <li class="navItem"><i class="material-icons md-18">build</i><p>Services & Installations</p></li>
+                </div>
+            </ul>
+            </div>
+                <button class="chat">Chat</button>   
+        </div>
+        <h4>Content</h4>
+
+
+
+
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                  panel.style.maxHeight = null;
+                } else {
+                  panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+              });
+            }
+            </script>
+    </body>
+</html>

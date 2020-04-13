@@ -1,0 +1,214 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.sidebar {
+  background-color: #333333;
+  width: 54px;
+  height: 100vh;
+  padding: 0px;
+  overflow: hidden;
+  float: left;
+  position: fixed;
+  transition: 0.2s;
+  z-index: 1;
+}
+
+.sidebar p {
+  display: none;
+}
+
+.sidebar:hover {
+ background-color: #333333;
+  width: 230px;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 10px 10px 40px 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  float: left;
+  position: fixed;
+  z-index: 1;
+}
+
+.sidebar:hover::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar:hover p {
+  display: initial;
+  }
+
+.sidebar .material-icons.md-18 {
+  margin-left: 8px;
+  }
+
+.sidebar:hover .material-icons.md-18 {
+  margin-left: 0px;
+  }
+
+ .sidebar:hover li {
+    color: rgba(255, 255, 255, 0.75)
+  }
+
+.sidebar:hover li.navItem {
+  overflow: hidden;
+  border-radius: 4px;
+}
+  
+ li.navItem {
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
+  list-style-type: none;
+  padding: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 0px;
+  color: white;
+}
+  
+  li.navItem:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .container {
+    transition: 0.2s;
+    padding: 0px 0px;
+  }
+  
+  .container:hover {
+    padding: 8px;
+    transition: 0.2s;
+  }
+
+  ul {
+      margin: 0px;
+      padding: 0px;
+      margin-bottom: 25px;
+  }
+
+  .logo {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+  }
+
+  img { 
+    width: 188px;
+    margin-left: 2px;
+  }
+
+  h4 { margin: 0px 54px; }
+
+ .bottom {
+    background-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(8px);
+    height: 50px;
+    width: 200px;
+    transition: 0.2s all;
+  }
+
+  .bottom:hover {
+    height: 50vh;
+  }
+
+  .gradientScrim {
+    background-image: linear-gradient(rgba(51,51,51,1), rgba(51,51,51,0));
+    height: 25%;
+    width: 100%;
+    z-index: 1000;
+    position: absolute;
+  }
+
+ .material-icons.md-18 {
+   font-size: 18px;
+   margin-right: 10px;
+   vertical-align: text-bottom;
+  }
+
+  li:hover .material-icons.md-18 {
+    color: green;
+    transition: 0.2s;
+    margin-left: 0px;
+  }
+
+.avatar {
+  display: block;
+  width: 36px;
+  height: 36px;
+  background-color: #b6b6b6;
+  border: 2px solid white;
+  border-radius: 100%;
+  font-size: 12px;
+  text-align: center;
+  float: left;
+  margin-right: 5px;
+}
+
+.name {
+  display: inline-block;
+}
+
+h3 {
+  margin-top: 11px;
+  color: #6b6b6b;
+}
+
+.panel {
+  background-color: #333333;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion {
+  width: 100%;
+  background-color: #333333;
+  color: rgba(255, 255, 255, 0.5);
+  border: none;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-family: 'Open Sans', sans-serif;
+  padding: 4px;
+  display: none;
+}
+
+.sidebar:hover .accordion {
+  display: block;
+}
+
+.accordion:hover {
+  color: white;
+  cursor: pointer;
+}
+
+#acc {
+  float: right;
+}
+
+.chat {
+  width: 54px;
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 4px;
+  font-family: 'Open Sans', sans-serif;
+  position: fixed;
+  bottom: 0;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.sidebar:hover .chat {
+  border-radius: 4px;
+  bottom: 10px
+}
